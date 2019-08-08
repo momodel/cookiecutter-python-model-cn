@@ -1,18 +1,18 @@
-# reference block
-#default_value_range:
+# 填写参考
+# default_value_range:
 #  int: &default_int_range "0-65536" # e.g. "0-65536" | [2, 4, 6] | ">=10" | "<=10", etc.
 #  float: &default_float_range "0-65536"
 #  datetime: &default_datetime_range "xxxx"
 
 param_spec: &default
-  name:               # required,
-  value_type:         # required, available Types: "int", "str", "float", "datetime", "[int]", "[str]", "dataframe", etc.
-  default_value:      # required, must match the value_type
-  value_range:        # optional, reference to default_value_range
+  name:               # 必填,
+  value_type:         # 必填, 参考: "int", "str", "float", "datetime", "[int]", "[str]", "dataframe", 等(可以写其他任意类型, 但是请描述清楚以便他人调用).
+  default_value:      # 必填, 需要和 value_type 相符
+  value_range:        # 选填, reference to default_value_range
   description:
   optional: False
 
-input: # mapping to input parameter in main.py
+input: # 和 main.py 中方法的输入参数相对应
   train:
 #    file_path:
 #      <<: *default
