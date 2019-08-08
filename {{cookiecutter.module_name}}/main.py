@@ -42,7 +42,7 @@ class {{cookiecutter.module_name}}(object):
 
     def load_model(self):
         '''
-        在此加载模型的结构以及权重， 并返回模型实例
+        在此加载已训练模型的结构以及权重， 并返回模型实例
         :param conf:
         :return: 模型实例
         '''
