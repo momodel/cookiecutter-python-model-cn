@@ -1,3 +1,6 @@
+"""
+模型主文件
+"""
 import os
 import sys
 
